@@ -18,9 +18,9 @@ logging.basicConfig(
 )
 
 # ========== ВАШИ API КЛЮЧИ ==========
-API_TOKEN = "8238501892:AAEePnr633i7a_YexenU8cCX3obuH2ZxXAo"
-DEEPSEEK_API_KEY = "sk-5c89db4e3c344601b07c35fe1188f848"
-REPLICATE_API_KEY = "r8_Ykk7l0ZU284aocLz4ha0uGob7RkRgUQ3eLwLx"
+API_TOKEN = os.getenv("BOT_TOKEN", "8238501892:AAEePnr633i7a_YexenU8cCX3obuH2ZxXAo")
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "sk-5c89db4e3c344601b07c35fe1188f848")
+REPLICATE_API_KEY = os.getenv("REPLICATE_API_KEY", "r8_Ykk7l0ZU284aocLz4ha0uGob7RkRgUQ3eLwLx")
 # ====================================
 
 # ========== ИНИЦИАЛИЗАЦИЯ БОТА ==========
